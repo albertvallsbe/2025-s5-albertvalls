@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<coverage generated="1751312081852" clover="3.2.0">
+  <project timestamp="1751312081852" name="All files">
+    <metrics statements="5" coveredstatements="5" conditionals="8" coveredconditionals="6" methods="4" coveredmethods="3" elements="17" coveredelements="14" complexity="0" loc="5" ncloc="5" packages="1" files="1" classes="1"/>
+    <file name="Card.tsx" path="E:\Repositoris\4_IT_Academy\2025-s5-albertvalls\src\components\Card.tsx">
+      <metrics statements="5" coveredstatements="5" conditionals="8" coveredconditionals="6" methods="4" coveredmethods="3"/>
+      <line num="3" count="1" type="stmt"/>
+      <line num="4" count="1" type="stmt"/>
+      <line num="5" count="3" type="stmt"/>
+      <line num="7" count="1" type="stmt"/>
+      <line num="16" count="3" type="stmt"/>
+    </file>
+  </project>
+</coverage>

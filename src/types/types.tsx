@@ -1,10 +1,22 @@
-export interface TutorialStep {
+export type TutorialStep = {
   title: string;
   description: string;
   bgColor?: string;
   image?: string;
-}
+};
 
-export interface CardProps {
-  step: TutorialStep;
-}
+export type NavigationControls = {
+  stepIndex: number;
+  currentStep: TutorialStep;
+  totalSteps: number;
+  isFirst: boolean;
+  isLast: boolean;
+  next: () => void;
+  prev: () => void;
+  goTo: (index: number) => void;
+};
+
+export type CardProps = {
+  card: TutorialStep;
+  controls: NavigationControls;
+};
