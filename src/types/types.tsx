@@ -5,17 +5,18 @@ export type TutorialStep = {
   image?: string;
 };
 
-export type CardProps = {
-  card: TutorialStep;
+export type NavigationControls = {
   stepIndex: number;
+  currentStep: TutorialStep;
   totalSteps: number;
-  prevStep?: () => void;
-  nextStep?: () => void;
-  goToStep: (index: number) => void;
+  isFirst: boolean;
+  isLast: boolean;
+  next: () => void;
+  prev: () => void;
+  goTo: (index: number) => void;
 };
 
-export type IndicatorProps = {
-  totalSteps: number;
-  currentStep: number;
-  onSelect: (index: number) => void;
+export type CardProps = {
+  card: TutorialStep;
+  controls: NavigationControls;
 };
