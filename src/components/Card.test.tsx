@@ -17,6 +17,7 @@ describe("Card component on initial step", () => {
     next: jest.fn(),
     prev: jest.fn(),
     goTo: jest.fn(),
+    direction: "next",
   };
 
   test("renders title, description, only the next button, and calls next()", () => {
