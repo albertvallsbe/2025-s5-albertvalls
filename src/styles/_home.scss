@@ -9,14 +9,46 @@ body {
   padding: 0;
 }
 
-// .card {
-//   display: grid;
-//   place-items: start center;
-//   padding: 2rem;
-//   background: colors.$light-gray;
-//   min-height: calc(100vh - 50px);
-//   overflow-y: auto;
-// }
+@keyframes slideInFromRight {
+  from {
+    transform: translateX(100%);
+    opacity: 0;
+  }
+
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@keyframes slideInFromLeft {
+  from {
+    transform: translateX(-100%);
+    opacity: 0;
+  }
+
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+/* Quan direction === "next" */
+.card.slide-next {
+  animation: slideInFromRight 1.5s ease-out both;
+}
+
+/* Quan direction === "prev" */
+.card.slide-prev {
+  animation: slideInFromLeft 1.5s ease-out both;
+}
+
+.card__box {
+  background-color: colors.$light-gray;
+  margin: 2rem auto;
+  width: 25rem;
+  overflow: hidden;
+}
 
 .card {
   width: 22rem;
