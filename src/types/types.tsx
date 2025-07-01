@@ -2,7 +2,7 @@ export type TutorialStep = {
   title: string;
   description: string;
   bgColor?: string;
-  image?: string;
+  // image?: string;
 };
 
 export type NavigationControls = {
@@ -19,4 +19,8 @@ export type NavigationControls = {
 export type CardProps = {
   card: TutorialStep;
   controls: NavigationControls;
+};
+
+export type ImageProps = {
+  refreshKey: number;
 };
