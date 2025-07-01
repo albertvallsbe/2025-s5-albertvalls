@@ -14,6 +14,7 @@ export type NavigationControls = {
   next: () => void;
   prev: () => void;
   goTo: (index: number) => void;
+  direction: "next" | "prev";
 };
 
 export type CardProps = {
