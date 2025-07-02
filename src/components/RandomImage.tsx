@@ -1,5 +1,3 @@
-// import type { ImageProps } from "../types/types";
-
 export const RandomImage = (): JSX.Element => {
   const id = Math.floor(Math.random() * 122) + 1;
   const src = `https://randomfox.ca/images/${id}.jpg`;
