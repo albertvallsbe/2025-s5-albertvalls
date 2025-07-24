@@ -84,7 +84,7 @@ The following image illustrates the main folder structure of the project:
 ![Project Structure](./src/assets/images/treeImage-2.png)
 
 ```
-2025-s4-albertvalls/
+2025-s5-albertvalls/
 ├── node_modules/
 ├── public/
 │   ├── style.css
